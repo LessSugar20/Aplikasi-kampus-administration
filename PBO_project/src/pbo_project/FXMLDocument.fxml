@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbo_project.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="login_form" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="login-bg" stylesheets="@design.css">
+               <children>
+                  <ImageView fx:id="logo" fitHeight="207.0" fitWidth="214.0" layoutX="97.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="400.0" prefHeight="500.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="close" layoutX="321.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" styleClass="exit" stylesheets="@design.css" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" />
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="username" layoutX="107.0" layoutY="197.0" prefHeight="28.0" prefWidth="220.0" promptText="Username " styleClass="textfield-design" stylesheets="@design.css" />
+                  <PasswordField fx:id="password" layoutX="107.0" layoutY="250.0" prefHeight="28.0" prefWidth="220.0" promptText="Password" styleClass="textfield-design" stylesheets="@design.css" />
+                  <Label layoutX="135.0" layoutY="60.0" text="LOGIN">
+                     <font>
+                        <Font name="Berlin Sans FB" size="45.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="login_btn" layoutX="152.0" layoutY="330.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="96.0" styleClass="button-design" stylesheets="@design.css" text="Login" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
